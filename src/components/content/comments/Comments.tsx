@@ -8,7 +8,7 @@ export default function Comments() {
   return commentFlag ? (
     <Giscus
       key={theme}
-      repo='theodorusclarence/theodorusclarence.com'
+      repo='alfredmelson/hmtgp'
       repoId='MDEwOlJlcG9zaXRvcnkzMzAyMTQyNDc='
       category='General'
       categoryId='DIC_kwDOE66rZ84B--B0'
@@ -16,6 +16,8 @@ export default function Comments() {
       reactionsEnabled='0'
       emitMetadata='0'
       theme={theme as Theme}
+      lang='en'
+      inputPosition='top'
     />
   ) : null
 }
